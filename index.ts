@@ -1,14 +1,14 @@
 let enterButton : HTMLElement = document.getElementById("enter");
-let input : HTMLElement = document.getElementById("userInput");
+let input : HTMLInputElement = <HTMLInputElement> document.getElementById("userInput");
 let ul : HTMLElement = document.querySelector("ul");
 let item : HTMLCollection = document.getElementsByTagName("li");
 
 function inputLength() : number{
-	return input['value'].length;
+	return input.value.length;
 } 
 
 function listLength() : number{
-	return item['length'];
+	return item.length;
 }
 
 function createListElement() : void {
@@ -62,3 +62,8 @@ function addListAfterKeypress(event : KeyboardEvent) : void {
 enterButton.addEventListener("click",addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+
+let check = () => {
+   console.log('check for es2015');
+}
