@@ -62,8 +62,3 @@ function addListAfterKeypress(event : KeyboardEvent) : void {
 enterButton.addEventListener("click",addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
-
-
-let check = () => {
-   console.log('check for es2015');
-}

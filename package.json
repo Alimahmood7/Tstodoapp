@@ -8,14 +8,16 @@
     "tslint": "^5.18.0",
     "tslint-loader": "^3.5.4",
     "typescript": "^3.5.3",
-    "webpack": "^4.36.1"
+    "webpack": "^4.36.1",
+    "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
     "webpack-cli": "^3.3.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=development"
+    "build": "webpack --mode=development",
+    "start:dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC"
