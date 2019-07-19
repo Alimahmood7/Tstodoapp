@@ -37,8 +37,9 @@ function createListElement() : void {
 
 
 	//ADD CLASS DELETE (DISPLAY: NONE)
-	function deleteListItem() : void{
-		li.classList.add("delete")
+	function deleteListItem() : void {
+      console.log('delete');
+      li.classList.add("delete")
 	}
 	//END ADD CLASS DELETE
 }
@@ -51,7 +52,7 @@ function addListAfterClick() : void {
 }
 
 function addListAfterKeypress(event : KeyboardEvent) : void {
-	if (inputLength() > 0 && event.which ===13) { //this now looks to see if you hit "enter"/"return"
+	if (inputLength() > 0 && event.which === 13) { //this now looks to see if you hit "enter"/"return"
 		//the 13 is the enter key's keycode, this could also be display by event.keyCode === 13
 		createListElement();
 	} 
